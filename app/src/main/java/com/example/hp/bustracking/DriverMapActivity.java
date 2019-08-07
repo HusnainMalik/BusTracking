@@ -36,6 +36,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -135,6 +136,7 @@ public class DriverMapActivity extends AppCompatActivity implements OnMapReadyCa
                     MarkerOptions markerOptions = new MarkerOptions();
                     markerOptions.position(new LatLng(latitude, longitude));
                     markerOptions.title(BusName);
+                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.car_pin));
                     mMap.clear();
                     mMap.addMarker(markerOptions);
 
