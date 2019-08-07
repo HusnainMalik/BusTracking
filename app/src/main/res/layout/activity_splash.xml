@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@drawable/grad_bd"
+    android:animateLayoutChanges="true"
+
+    >
+    <RelativeLayout
+
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        >
+        <ImageView
+            android:id="@+id/iv_hlogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bz"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rellay1"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iv_hlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_welocme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:text="Welcome"/>
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_below="@+id/tv_welocme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/btn_studlogin"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="16dp"
+                        android:background="@drawable/btn_bg"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="70dp"
+                        android:paddingLeft="70dp"
+                        android:text="Student Login"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/btn_driverlogin"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="16dp"
+                        android:background="@drawable/btn_bg"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="70dp"
+                        android:paddingLeft="70dp"
+                        android:text="Driver Login"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/grad_bd"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:context=".DriverLoginActivity">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/driver" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/till_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789+"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/till_dpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/et_dpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_Dlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>

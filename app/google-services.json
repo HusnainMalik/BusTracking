@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "383535791",
+    "firebase_url": "https://pharma-tech-b031a.firebaseio.com",
+    "project_id": "pharma-tech-b031a",
+    "storage_bucket": "pharma-tech-b031a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383535791:android:bd02f0d2b76c21ad",
+        "android_client_info": {
+          "package_name": "com.example.ayeshaabdullah.pharma_tech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383535791-7hajtqa05p0qk5n5ue9q9o0ojktkvtnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgNoB-6y_gk2xBq7uR5T4ehv0AYs1hUKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383535791-7hajtqa05p0qk5n5ue9q9o0ojktkvtnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

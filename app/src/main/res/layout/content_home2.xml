@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf3f7"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home2Activity"
+    tools:showIn="@layout/app_bar_home2"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_livetrack"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="2dp"
+                android:layout_marginTop="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s1"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text="Where am I >"
+                    android:textColor="#faf9f9"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_livetracking"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                android:layout_margin="2dp"
+                android:layout_marginTop="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_gravity="bottom"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text="Live Tracking >"
+                    android:textColor="#faf9f9"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_stop"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                android:layout_margin="2dp"
+                android:layout_marginTop="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stopp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_gravity="bottom"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text="Route Stops Information >"
+                    android:textColor="#faf9f9"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_timetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginTop="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stopimg"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:padding="5dp"
+                    android:text="Time Table >"
+                    android:textColor="#faf9f9"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

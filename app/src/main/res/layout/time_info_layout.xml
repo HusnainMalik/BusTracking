@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:padding="20dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginTop="20dp"
+    >
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday to Thursday"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_timename"
+            android:layout_below="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning Time"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_timedepart"
+            android:layout_below="@+id/tv_timename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Departure from University"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/tv_timearrival"
+            android:layout_below="@id/tv_timedepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival your Stop"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_below="@+id/tv_timename"
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_timeofdepart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:15 am"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+
+            />
+        <TextView
+            android:layout_below="@+id/tv_timeofdepart"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_timeofarrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:50 am"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
